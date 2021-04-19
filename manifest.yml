@@ -6,7 +6,8 @@ applications:
   instances: 1
   host: snappass
   timeout: 180
-  buildpack: python_buildpack
+  buildpacks:
+    - python_buildpack
   env:
     SECRET_KEY: "<put-here-something-random-like-32-characters-long>" # See: http://flask.pocoo.org/docs/1.0/quickstart/#sessions
 
